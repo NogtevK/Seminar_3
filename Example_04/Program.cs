@@ -4,3 +4,12 @@
 5 -> 1, 4, 9, 16, 25.
 2 -> 1,4
  */
+
+ int x=1;
+ Console.WriteLine("Введите число N ");
+ int N=int.Parse(Console.ReadLine());
+ while (x<=N)
+ {
+    Console.Write(Math.Pow(x,2)+" ");
+    x++;
+ }
