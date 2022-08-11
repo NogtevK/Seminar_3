@@ -30,7 +30,8 @@ else
 A (3,6,8); B (2,1,-7), -> 15.84
 A (7,-5, 0); B (1,-1,9) -> 11.53 */
 
-Console.WriteLine("Введите координату x1 для точки А ");
+/*
+ Console.WriteLine("Введите координату x1 для точки А ");
 int x1 = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату y1 для точки А ");
@@ -52,10 +53,21 @@ Console.WriteLine("A (" + x1 + "," + y1 + "," + z1 + ")");
 Console.WriteLine("B (" + x2 + "," + y2 + "," + z2 + ")");
 
 double result = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2) + Math.Pow(z1 - z2, 2));
-Console.WriteLine("Расстояние между точками в 3D: " + Math.Round(result, 2));
+Console.WriteLine("Расстояние между точками в 3D: " + Math.Round(result, 2)); 
+*/
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /* Задача 23: Напишите программу, которая принимает на
 вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125 */
+
+Console.WriteLine("Введите число N: ");
+int N = int.Parse(Console.ReadLine());
+int x = 1;
+
+while (x <= N)
+{
+    Console.Write(Math.Pow(x, 3)+" ");
+    x++;
+}
