@@ -17,6 +17,7 @@ int x2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите координаты y2");
 int y2 = int.Parse(Console.ReadLine());
 
-double result=Math.Sqrt(Math.Pow(x1-x2,2)+Math.Pow(y1-y2,2));
-Console.WriteLine(result);
+double result = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
+
+Console.WriteLine("Расстояние между ними в 2D: " + Math.Round(result, 3));
 
